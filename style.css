@@ -1,0 +1,217 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(fon.jpg);
+}
+
+
+h1{
+	font-family: 'Otomanopee One', sans-serif;
+}
+
+
+header{
+	height: 240px;
+	width: 100%;
+	background: #74dfc0;
+}
+
+
+.hup{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.hd{
+	text-align: center;
+}
+
+.hd a{
+	margin-left: 15px;
+}
+
+
+.onac{
+	font-size: 25px;
+	display: inline-block;
+	width: 55%;
+	text-align: left;
+}
+
+
+a{
+	color: #7f7ffe;
+	text-decoration: none;
+}
+
+h2{
+	text-align: left;
+	margin-left: 45px;
+}
+
+a:hover{
+	color: #4040fe;
+	text-decoration: none;
+}
+
+
+.aksii{
+	text-align: center;
+	display: flex;
+}
+
+.aksii div{
+	width: 30%;
+	background: #e6e6e6;
+	margin-left: 20px;
+	border: 5px solid #c8c8c8;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.aksii div img{
+	border: 5px solid #c8c8c8;
+}
+
+.aksii div span{
+	text-decoration: line-through;
+}
+
+.aksii div p{
+	margin-bottom: 5px;
+}
+
+.new{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.new img{
+	width: 65%;
+}
+
+.n{
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+
+
+.n img:hover + div{
+	display: block;
+}
+
+.n div{
+	display: none;
+	position: absolute;
+	left: 508px;
+	background: #e3e3bb;
+	margin-top: 5px;
+	width: 30%;
+	height: 40%;
+}
+
+.n div img{
+	width: 30%;
+}
+
+main{
+	background: #74dfc0;
+	display: inline-block;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+p{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.up img{
+	position: fixed;
+	z-index: 999;
+	bottom: 20px; 
+	left: 20px;
+	width: 50px;
+}
+
+
+footer{
+	height: 50%;
+	width: 100%;
+	background: #74dfc0;
+}
+
+
+.div2{
+	margin-left: 35%;
+	margin-top: 25px;
+	width: 30%;
+	display: inline-block;
+	background: #c8c8c8;
+	text-align: center;
+}
+
+.div2 img{
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 20%;
+}
+
+.div2 span{
+	color: #c8c8c8;
+}
+
+.div2 button{
+	
+}
+
+
+
+header span{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 900;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+header span:before {
+    content: '';
+    position: absolute;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #1ADB00 1em, #14A800 50%), repeating-linear-gradient(45deg, #14A800, #6FE062 1em, #0B6100 1em, #1ADB00 50%);
+    background-size: 3em 3em, 2em 2em;
+    animation-name: ani;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ani {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@media (max-width:690px) {    
+    header span {font-size: 20px;}    
+}
+
